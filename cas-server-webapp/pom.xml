@@ -35,6 +35,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>org.jasig.cas</groupId>
+      <artifactId>cas-server-webapp-jdbc</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
       <scope>runtime</scope>
@@ -53,6 +59,16 @@
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.31</version>
+	  </dependency>
+    <dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-dbcp2</artifactId>
+	    <version>2.0.1</version>
+	  </dependency>
   </dependencies>
 
   <build>
@@ -72,6 +88,16 @@
               </includes>
             </resource>
           </webResources>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <path>/</path>
+          <port>8080</port>
+          <contextReloadable>false</contextReloadable>
         </configuration>
       </plugin>
     </plugins>
