@@ -1,0 +1,5 @@
+https://wiki.jasig.org/display/CASUM/Configuring
+http://jasig.github.io/cas/development/installation/OAuth-OpenId-Authentication.html
+http://127.0.0.1:8080/oauth2.0/authorize?client_id=127001&redirect_uri=http://127.0.0.1:8090/oauth/token
+http://127.0.0.1:8080/oauth2.0/accessToken?client_id=127001&client_secret=dd6929d3564eb95ad69dfbee8dde44fa&redirect_uri=http://127.0.0.1:8090/oauth/token&code=
+http://127.0.0.1:8080/oauth2.0/profile?access_token=
