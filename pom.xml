@@ -256,7 +256,7 @@
     </pluginManagement>
 
     <plugins>
-        <plugin>
+        <!-- <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
             <version>${maven-checkstyle-plugin.version}</version>
@@ -282,7 +282,7 @@
                   <version>${checkstyle.version}</version>
                </dependency>
             </dependencies>
-      </plugin>
+      </plugin> -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -383,7 +383,7 @@
           </target>
         </configuration>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>com.mycila.maven-license-plugin</groupId>
         <artifactId>maven-license-plugin</artifactId>
         <configuration>
@@ -438,7 +438,7 @@
                 </goals>
             </execution>
         </executions>
-      </plugin>
+      </plugin> -->
     </plugins>
   </build>
 

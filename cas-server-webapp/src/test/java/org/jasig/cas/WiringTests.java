@@ -35,7 +35,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class WiringTests {
     private XmlWebApplicationContext applicationContext;
-
+    
     @Before
     public void setUp() {
         applicationContext = new XmlWebApplicationContext();
@@ -60,5 +60,6 @@ public class WiringTests {
     @Test
     public void testWiring() throws Exception {
         assertTrue(applicationContext.getBeanDefinitionCount() > 0);
+//        entityManagerFactory.createEntityManager();
     }
 }

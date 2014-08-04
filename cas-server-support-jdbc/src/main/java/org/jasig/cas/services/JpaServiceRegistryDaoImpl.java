@@ -18,6 +18,7 @@
  */
 package org.jasig.cas.services;
 
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.validation.constraints.NotNull;
@@ -32,7 +33,7 @@ import java.util.List;
 public final class JpaServiceRegistryDaoImpl implements ServiceRegistryDao {
 
     @NotNull
-    @PersistenceContext
+    @PersistenceContext(unitName="registeredService")
     private EntityManager entityManager;
 
     @Override
