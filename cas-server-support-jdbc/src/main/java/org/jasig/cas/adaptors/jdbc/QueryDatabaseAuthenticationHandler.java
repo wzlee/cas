@@ -56,7 +56,7 @@ public class QueryDatabaseAuthenticationHandler extends AbstractJdbcUsernamePass
         final String username = credential.getUsername();
         final String encryptedPassword = this.getPasswordEncoder().encode(credential.getPassword());
         try {
-            final String dbPassword = getJdbcTemplate().queryForObject(this.sql, String.class, username);
+            final String dbPassword = getJdbcTemplate().queryForObject(this.sql, String.class, username, username, username);
             if (!dbPassword.equals(encryptedPassword)) {
                 throw new FailedLoginException("Password does not match value on record.");
             }
